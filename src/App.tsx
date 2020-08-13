@@ -191,10 +191,10 @@ const App: React.FC = () => {
             ) {
               indiceFidelidade += 1;
               valorGasto += venda.valorTotal;
-              valorCompraUltimoAno +=
-                new Date(venda.data).getFullYear() === 2016
+              valorCompraUltimoAno =
+                new Date(venda.data).getFullYear() === 2016 && venda.valorTotal > valorCompraUltimoAno
                   ? venda.valorTotal
-                  : 0;
+                  : valorCompraUltimoAno;
               venda.itens.forEach((item) => {
                 const vinho = vinhos.findIndex(
                   (vinho) => JSON.stringify(vinho) === JSON.stringify(item)
