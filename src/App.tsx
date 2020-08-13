@@ -288,7 +288,7 @@ const App: React.FC = () => {
               '#',
               'Nome',
               'CPF',
-              'Valor de compras em 2016',
+              'Maior compra em 2016',
               'Índice de fidelidade',
               'Valor total gasto'
             ]}
@@ -313,7 +313,7 @@ const App: React.FC = () => {
               '#',
               'Nome',
               'CPF',
-              'Valor de compras em 2016',
+              'Maior compra em 2016',
               'Índice de fidelidade',
               'Valor total gasto'
             ]}
@@ -349,7 +349,7 @@ const App: React.FC = () => {
               '#',
               'Nome',
               'CPF',
-              'Valor de compras em 2016',
+              'Maior compra em 2016',
               'Índice de fidelidade',
               'Valor total gasto'
             ]}
