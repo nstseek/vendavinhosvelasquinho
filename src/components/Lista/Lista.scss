@@ -1,0 +1,28 @@
+@import '../../scss/variables.scss';
+
+div.Lista {
+  width: 100%;
+  & > h3 {
+    margin: 0;
+    padding: 1em 0;
+  }
+  & > table {
+    width: 100%;
+    border-collapse: collapse;
+    tr {
+      border-bottom: 1px solid lightgray;
+      &:nth-child(2n - 1) {
+        background-color: $beige;
+      }
+    }
+    td {
+      padding: 5px;      
+    }
+    th {
+      padding: 13px;
+    }
+    td, th {
+      color: #565656;
+    }
+  }
+}
