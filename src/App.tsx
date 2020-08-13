@@ -150,12 +150,12 @@ const App: React.FC = () => {
         });
         const usuarios = (
           await Axios.get<UsuarioHttp[]>(
-            'http://www.mocky.io/v2/598b16291100004705515ec5'
+            'https://www.mocky.io/v2/598b16291100004705515ec5'
           )
         ).data;
         const vendas = (
           await Axios.get<Venda[]>(
-            'http://www.mocky.io/v2/598b16861100004905515ec7'
+            'https://www.mocky.io/v2/598b16861100004905515ec7'
           )
         ).data;
         const vinhos: Item[] = [];
