@@ -19,7 +19,9 @@ const Tab: React.FC<Props> = (props) => {
 
   return (
     <div className='Tab'>
-      <div className='title' onClick={props.click}>{props.title}</div>
+      <div className='title' onClick={props.click}>
+        {props.title}
+      </div>
       {render ? (
         <CSSTransition
           in={props.active}

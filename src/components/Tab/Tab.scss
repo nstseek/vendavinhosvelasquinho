@@ -18,7 +18,7 @@ div.Tab {
     padding: 10px 20px;
     text-align: start;
     cursor: pointer;
-    transition: background-color .3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
     border-bottom: 1px solid lightgray;
     &:hover {
       background-color: white;

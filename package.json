@@ -40,7 +40,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prettier": "prettier --check \"src/**/*.scss\" \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "prettier:fix": "prettier --write \"src/**/*.scss\" \"src/**/*.ts\" \"src/**/*.tsx\"",
     "lint": "eslint src/**/*.tsx src/**/*.ts && stylelint \"**/*.scss\" --config .stylelintrc",
+    "lint:fix": "eslint src/**/*.tsx src/**/*.ts --fix && stylelint \"**/*.scss\" --config .stylelintrc --fix",
     "check": "npm run lint && npm run prettier && npm run test && npm run build"
   },
   "eslintConfig": {

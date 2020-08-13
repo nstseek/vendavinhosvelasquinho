@@ -3,8 +3,8 @@ import './Lista.scss';
 import { isString, isNumber } from 'util';
 
 interface Props {
-    data: any[][];
-    tituloColunas: string[];
+  data: any[][];
+  tituloColunas: string[];
 }
 
 const Lista: React.FC<Props> = (props) => (
@@ -23,9 +23,7 @@ const Lista: React.FC<Props> = (props) => (
             {linha.map((coluna, index) =>
               isString(coluna) || isNumber(coluna) ? (
                 <td key={index}>{coluna}</td>
-              ) : (
-                null
-              )
+              ) : null
             )}
           </tr>
         ))}
