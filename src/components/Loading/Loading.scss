@@ -1,0 +1,31 @@
+@import '../../scss/variables.scss';
+
+@keyframes fillStroke {
+  0% {
+    stroke-dashoffset: 4711;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -4711;
+  }
+}
+
+@keyframes rotateEl {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+svg {
+  width: 64px;
+  fill: transparent;
+  stroke: $yellow;
+  stroke-width: 100px;
+  stroke-dasharray: 4711;
+  animation: fillStroke 4s ease infinite, rotateEl 2s ease infinite;
+}
