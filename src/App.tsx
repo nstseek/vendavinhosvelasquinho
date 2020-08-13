@@ -192,7 +192,8 @@ const App: React.FC = () => {
               indiceFidelidade += 1;
               valorGasto += venda.valorTotal;
               valorCompraUltimoAno =
-                new Date(venda.data).getFullYear() === 2016 && venda.valorTotal > valorCompraUltimoAno
+                new Date(venda.data).getFullYear() === 2016 &&
+                venda.valorTotal > valorCompraUltimoAno
                   ? venda.valorTotal
                   : valorCompraUltimoAno;
               venda.itens.forEach((item) => {
