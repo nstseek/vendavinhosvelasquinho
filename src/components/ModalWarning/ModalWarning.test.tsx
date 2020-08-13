@@ -8,8 +8,9 @@ describe('<ModalWarning />', () => {
   beforeEach(() => {
     component = shallow(
       <ModalWarning
-        warning={{ text: 'test', title: 'test' }}
+        warning={{ text: 'test', title: 'test', open: true }}
         clearWarning={jest.fn}
+        closeWarning={jest.fn}
       />
     );
   });

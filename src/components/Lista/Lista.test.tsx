@@ -6,7 +6,7 @@ describe('<Lista />', () => {
   let component;
 
   beforeEach(() => {
-    component = shallow(<Lista />);
+    component = shallow(<Lista data={[['test']]} tituloColunas={['test']} />);
   });
 
   test('It should mount', () => {

@@ -6,7 +6,9 @@ describe('<Tab />', () => {
   let component;
 
   beforeEach(() => {
-    component = shallow(<Tab />);
+    component = shallow(
+      <Tab title='test' active={true} click={() => jest.fn()} />
+    );
   });
 
   test('It should mount', () => {
