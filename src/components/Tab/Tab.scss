@@ -1,0 +1,38 @@
+@import '../../scss/variables.scss';
+
+@keyframes grow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 380px;
+  }
+}
+
+div.Tab {
+  & > div.title {
+    width: 100%;
+    background-color: $yellow;
+    color: $black;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: start;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+    border-bottom: 1px solid lightgray;
+    &:hover {
+      background-color: white;
+    }
+  }
+  & > div.content {
+    animation: grow 1s ease-in-out;
+    transition: height 1s ease-in-out;
+    overflow: hidden;
+    height: 380px;
+    background-color: $white;
+    border-bottom: 1px solid lightgray;
+    &.animate-exit.animate-exit-active {
+      height: 0;
+    }
+  }
+}
